@@ -65,6 +65,6 @@ public class ComboView extends JFrame {
         ComboPersonalizado combo = controller.obtenerComboFinal();
         
         resultadoArea.setText(combo.getDetalle());
-        
+        JOptionPane.showMessageDialog(this, "✅ ¡Tu pedido se está preparando!", "Confirmación", JOptionPane.INFORMATION_MESSAGE);
     }
 }
