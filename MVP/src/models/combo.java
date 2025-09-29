@@ -1,7 +1,7 @@
 package models;
 
 
-public interface combo {
+public interface Combo {
     String getDescription();
     
 }
