@@ -9,11 +9,11 @@ import models.ComboVegetariano;
 public class ComboFactory {
     public static Combo crearCombo(String tipo) {
         switch (tipo.toLowerCase()) {
-            case "hamburguesa";
+            case "hamburguesa":
               return new ComboHamburguesa();
-            case "pollo";
+            case "pollo":
               return new ComboPollo();
-            case "vegetariano";
+            case "vegetariano":
               return new ComboVegetariano();
             default:
                 throw new IllegalArgumentException("Tipo de combo no válido");
