@@ -7,6 +7,7 @@ import builder.ComboPersonalizado;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class ComboView extends JFrame {
     private final JComboBox<String> comboBoxTipo;
@@ -64,6 +65,6 @@ public class ComboView extends JFrame {
         ComboPersonalizado combo = controller.obtenerComboFinal();
         
         resultadoArea.setText(combo.getDetalle());
-        JOptionPane.showMessageDialog(this, "✅ ¡Tu pedido se está preparando!", "Confirmación", JOptionPane.INFORMATION_MESSAGE);
+        
     }
 }
